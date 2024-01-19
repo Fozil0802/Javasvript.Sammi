@@ -70,27 +70,46 @@ const isMarried = false;
 
 // console.log(yuq uzgaruvchini chaqirish);
 
-// Undefined
+// // Undefined
 
-let benom;
+// let benom;
 
-console.log(benom);
+// console.log(benom);
 
-//object
+// //object
 
-const thief = {
- //key = value   
-  name: "fozil",
-  age: 28,
-  islong: false,
-};
-console.log(thief);
-console.log(thief["age"]);
+// const thief = {
+//  //key = value   
+//   name: "fozil",
+//   age: 28,
+//   islong: false,
+// };
+// console.log(thief);
+// console.log(thief["age"]);
 
-//Array
+// //Array
 
-const colors = [
-  // 0        1      2   3  4  
-    "red", "black", 95, [], {}
-]
-console.log(colors[0]);
+// const colors = [
+//   // 0        1      2   3  4  
+//     "red", "black", 95, [], {}
+// ]
+// console.log(colors[0]);
+
+// lesson-5
+
+// alert("hello")
+// const place = confirm("how are you?")
+// console.log(place);
+
+// const currentplace = prompt("where are you?","korea")
+// console.log(currentplace); typeof => string
+
+// const age = +prompt("how old are you?", "28")
+// console.log(age + 1);
+
+// const fovouritecolor = [];
+// fovouritecolor[0] = prompt("what's your favourite color #1", "")
+// fovouritecolor[1] = prompt("what's your favourite color #2", "")
+// fovouritecolor[2] = prompt("what's your favourite color #3", "")
+// console.log(typeof fovouritecolor); object
+
