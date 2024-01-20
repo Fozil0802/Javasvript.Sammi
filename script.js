@@ -79,7 +79,7 @@ const isMarried = false;
 // //object
 
 // const thief = {
-//  //key = value   
+//  //key = value
 //   name: "fozil",
 //   age: 28,
 //   islong: false,
@@ -90,7 +90,7 @@ const isMarried = false;
 // //Array
 
 // const colors = [
-//   // 0        1      2   3  4  
+//   // 0        1      2   3  4
 //     "red", "black", 95, [], {}
 // ]
 // console.log(colors[0]);
@@ -112,4 +112,71 @@ const isMarried = false;
 // fovouritecolor[1] = prompt("what's your favourite color #2", "")
 // fovouritecolor[2] = prompt("what's your favourite color #3", "")
 // console.log(typeof fovouritecolor); object
+
+// lesson-6
+
+// const channel = prompt("what's your favourite git hup")
+// console.log(`https://github.com ${channel}`);
+
+// const user = "fozil";
+
+// const job = "JavaScript developer";
+
+// console.log(`user name is ${user}, he is ${job}`);
+
+//  prompt,alert => bular console.logda ishlamaydi faqat browserda ishleydi
+
+// lesson-7
+
+console.log("fozil" + "khudoyberdiev");
+// fozilkhudoyberdiev
+
+console.log(95 + "khudoyberdiev");
+// 95khudoyberdiev
+
+console.log("khudoyberdiev" + 95);
+// khudoyberdiev95
+
+console.log(95 + +"khudoyberdiev");
+// NaN
+
+// incr, decr
+
+let incr = 11;
+let decr = 11;
+
+incr++;
+decr--;
+
+console.log(incr++);
+12;
+console.log(decr--);
+10;
+
+console.log(incr++);
+13;
+console.log(decr--);
+9;
+
+console.log(incr);
+14;
+console.log(decr);
+8;
+
+console.log(11 % 2);
+1;
+
+console.log(5 * 5 == "25");
+true;
+
+console.log(5 * 5 === "25");
+false;
+
+// && va  hammasi true bo'lsa ishlaidi
+// || yoki bittasi true bo'lsa ishleydi
+//  ! teskarisiga o'giradi masalan !true = false
+
+//  javasicriptda ham mathda birinchi *,/ bajariladi kiyen +,-
+
+
 
