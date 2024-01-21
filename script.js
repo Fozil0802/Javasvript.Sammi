@@ -178,5 +178,22 @@ false;
 
 //  javasicriptda ham mathda birinchi *,/ bajariladi kiyen +,-
 
+// lesson9
 
+const numberofseries = prompt("nechta serial ko'rdiz", "");
+const seriesDB = {
+    count: numberofseries,
+    series: {},
+    actors: {},
+    genres: [],
+    privets: false,
+};
+
+const a = prompt("oxirgi kp'rgan serialingiz?"),
+b = prompt("nechi baxo berasiz?"),
+c = prompt("oxirgi ko'rgan serialingiz?"),
+d = prompt("nechi baxo berasiz?");
+seriesDB.series[a] =b;
+seriesDB.series[c] = d;
+console.log(seriesDB);
 
