@@ -182,18 +182,37 @@ false;
 
 const numberofseries = prompt("nechta serial ko'rdiz", "");
 const seriesDB = {
-    count: numberofseries,
-    series: {},
-    actors: {},
-    genres: [],
-    privets: false,
+  count: numberofseries,
+  series: {},
+  actors: {},
+  genres: [],
+  privets: false,
 };
 
-const a = prompt("oxirgi kp'rgan serialingiz?"),
-b = prompt("nechi baxo berasiz?"),
-c = prompt("oxirgi ko'rgan serialingiz?"),
-d = prompt("nechi baxo berasiz?");
-seriesDB.series[a] =b;
-seriesDB.series[c] = d;
-console.log(seriesDB);
 
+
+for (let i = 0; i < 2; i++) {
+  const a = prompt("oxirgi kp'rgan serialingiz?"),
+    b = prompt("nechi baxo berasiz?");
+
+    if(a != null && b != null && a != "" && b != ""){
+        seriesDB.series[a] = b;
+        console.log("done");
+    } else {
+        console.log("error");
+        i--;
+    }
+
+}
+
+if(seriesDB.count < 5){
+    console.log("kam serial ko'ripsiz");
+} else if(seriesDB.count >= 5 && seriesDB.count <10){
+    console.log("siz klassik tomoshabin ekansiz");
+}else if(seriesDB.count >=10){
+    console.log("siz juda ko'p serial ko'rarkansiz");
+}else{
+    console.log('error');
+}
+
+console.log(seriesDB);
