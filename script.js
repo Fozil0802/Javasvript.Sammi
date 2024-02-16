@@ -180,39 +180,99 @@ false;
 
 // lesson9
 
-const numberofseries = prompt("nechta serial ko'rdiz", "");
-const seriesDB = {
-  count: numberofseries,
-  series: {},
-  actors: {},
-  genres: [],
-  privets: false,
-};
+// const numberofseries = prompt("nechta serial ko'rdiz", "");
+// const seriesDB = {
+//   count: numberofseries,
+//   series: {},
+//   actors: {},
+//   genres: [],
+//   privets: false,
+// };
 
+// for (let i = 0; i < 2; i++) {
+//   const a = prompt("oxirgi kp'rgan serialingiz?"),
+//     b = prompt("nechi baxo berasiz?");
 
+//     if(a != null && b != null && a != "" && b != ""){
+//         seriesDB.series[a] = b;
+//         console.log("done");
+//     } else {
+//         console.log("error");
+//         i--;
+//     }
 
-for (let i = 0; i < 2; i++) {
-  const a = prompt("oxirgi kp'rgan serialingiz?"),
-    b = prompt("nechi baxo berasiz?");
+// }
 
-    if(a != null && b != null && a != "" && b != ""){
-        seriesDB.series[a] = b;
-        console.log("done");
-    } else {
-        console.log("error");
-        i--;
-    }
+// if(seriesDB.count < 5){
+//     console.log("kam serial ko'ripsiz");
+// } else if(seriesDB.count >= 5 && seriesDB.count <10){
+//     console.log("siz klassik tomoshabin ekansiz");
+// }else if(seriesDB.count >=10){
+//     console.log("siz juda ko'p serial ko'rarkansiz");
+// }else{
+//     console.log('error');
+// }
+
+// console.log(seriesDB);
+
+// funksiya
+console.log("fozil");
+function sayHelloWorld() {
+  console.log("hello fozil");
+}
+sayHelloWorld();
+
+function sum(a, b) {
+  console.log(a * b);
+}
+sum(5, 6);
+let name = "fozil";
+function Myname(name, surname) {
+  let age = 28;
+  console.log(`my name is ${name} ${surname}`);
+  console.log(age);
+  console.log(name);
+}
+Myname("Fozil", "Khudoyberdiev");
+// console.log(age);
+console.log(name);
+
+function hello(a, b) {
+    sun = 15;
+    sun = 20;
+    console.log(sum);
+}
+let sun = 25;
+hello();
+console.log(sun);
+
+function calc(a,b){
+    return a+b;
+}
+console.log(calc(2,3));
+
+console.log(a);
+var a=2
+
+// function declalation
+// Script kodimizni ishlashni boshlashdan oldin yaratilgan bo'ladi, va biz uni funcsiyadan oldin chaqirishimiz mumkin
+
+function name(){
 
 }
 
-if(seriesDB.count < 5){
-    console.log("kam serial ko'ripsiz");
-} else if(seriesDB.count >= 5 && seriesDB.count <10){
-    console.log("siz klassik tomoshabin ekansiz");
-}else if(seriesDB.count >=10){
-    console.log("siz juda ko'p serial ko'rarkansiz");
-}else{
-    console.log('error');
+// function expression
+// qachonki kodimiz ushbu funksiya yetib kelganda yaratiladi, faqat funcsiyadan keyin chaqiriladi.
+
+ const fod = function() {
+    
+ }
+
+// arrow function  
+// O'zini shaxsiy content this mavjud emass ()=>
+let calc = (a,b)=>{
+    return
 }
 
-console.log(seriesDB);
+const calc = (a,b) => a= + b;
+
