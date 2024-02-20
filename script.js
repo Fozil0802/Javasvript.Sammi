@@ -238,41 +238,75 @@ Myname("Fozil", "Khudoyberdiev");
 console.log(name);
 
 function hello(a, b) {
-    sun = 15;
-    sun = 20;
-    console.log(sum);
+  sun = 15;
+  sun = 20;
+  console.log(sum);
 }
 let sun = 25;
 hello();
 console.log(sun);
 
-function calc(a,b){
-    return a+b;
+function calc(a, b) {
+  return a + b;
 }
-console.log(calc(2,3));
+console.log(calc(2, 3));
 
 console.log(a);
-var a=2
+var a = 2;
 
 // function declalation
 // Script kodimizni ishlashni boshlashdan oldin yaratilgan bo'ladi, va biz uni funcsiyadan oldin chaqirishimiz mumkin
 
-function name(){
+// function name(){
 
-}
+// }
 
 // function expression
 // qachonki kodimiz ushbu funksiya yetib kelganda yaratiladi, faqat funcsiyadan keyin chaqiriladi.
 
- const fod = function() {
-    
- }
+//  const fod = function() {
 
-// arrow function  
+//  }
+
+// arrow function
 // O'zini shaxsiy content this mavjud emass ()=>
-let calc = (a,b)=>{
-    return
-}
+// let calc = (a,b)=>{
+//     return
+// }
 
-const calc = (a,b) => a= + b;
+// const calc = (a,b) => a= + b;
 
+//lesson-14
+
+const user = "Fozil";
+console.log(user.length);
+
+const arr = [1, 2, 3, 4];
+console.log(arr.length);
+console.log(user[1]);
+console.log(user[1], "o");
+console.log(user);
+
+console.log(user.toUpperCase());
+
+const upperCaseUser = user.toUpperCase();
+console.log(upperCaseUser);
+
+console.log(user.toLowerCase());
+
+const greeting = "Hello  world";
+console.log(greeting.indexOf("w"));
+console.log(greeting.slice(4));
+console.log(greeting.slice(-6, 1));
+console.log(greeting.substring(5, 10)); // slecedan farqi - qiymat qabul qilmaydi
+console.log(greeting.substr(5, 5));
+
+//number
+
+const num2 = 8.8;
+
+console.log(Math.round(num2));
+
+const boderWidth = "13.8px"
+console.log(parseInt(boderWidth));
+console.log(parseFloat(boderWidth));
