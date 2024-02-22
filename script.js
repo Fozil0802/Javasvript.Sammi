@@ -128,49 +128,49 @@ const isMarried = false;
 
 // lesson-7
 
-console.log("fozil" + "khudoyberdiev");
-// fozilkhudoyberdiev
+// console.log("fozil" + "khudoyberdiev");
+// // fozilkhudoyberdiev
 
-console.log(95 + "khudoyberdiev");
-// 95khudoyberdiev
+// console.log(95 + "khudoyberdiev");
+// // 95khudoyberdiev
 
-console.log("khudoyberdiev" + 95);
-// khudoyberdiev95
+// console.log("khudoyberdiev" + 95);
+// // khudoyberdiev95
 
-console.log(95 + +"khudoyberdiev");
-// NaN
+// console.log(95 + +"khudoyberdiev");
+// // NaN
 
-// incr, decr
+// // incr, decr
 
-let incr = 11;
-let decr = 11;
+// let incr = 11;
+// let decr = 11;
 
-incr++;
-decr--;
+// incr++;
+// decr--;
 
-console.log(incr++);
-12;
-console.log(decr--);
-10;
+// console.log(incr++);
+// 12;
+// console.log(decr--);
+// 10;
 
-console.log(incr++);
-13;
-console.log(decr--);
-9;
+// console.log(incr++);
+// 13;
+// console.log(decr--);
+// 9;
 
-console.log(incr);
-14;
-console.log(decr);
-8;
+// console.log(incr);
+// 14;
+// console.log(decr);
+// 8;
 
-console.log(11 % 2);
-1;
+// console.log(11 % 2);
+// 1;
 
-console.log(5 * 5 == "25");
-true;
+// console.log(5 * 5 == "25");
+// true;
 
-console.log(5 * 5 === "25");
-false;
+// console.log(5 * 5 === "25");
+// false;
 
 // && va  hammasi true bo'lsa ishlaidi
 // || yoki bittasi true bo'lsa ishleydi
@@ -178,81 +178,112 @@ false;
 
 //  javasicriptda ham mathda birinchi *,/ bajariladi kiyen +,-
 
-// lesson9
+// lesson-9
 
-// const numberofseries = prompt("nechta serial ko'rdiz", "");
-// const seriesDB = {
-//   count: numberofseries,
-//   series: {},
-//   actors: {},
-//   genres: [],
-//   privets: false,
-// };
+let numberofseries;
+function startApp() {
+  numberofseries = prompt("nechta serial ko'rdiz", "");
+  while (
+    numberofseries == "" ||
+    numberofseries == null ||
+    isNaN(numberofseries)
+  ) {
+    numberofseries = prompt("nechta serial ko'rdiz", "");
+  }
+}
+startApp();
+const seriesDB = {
+  count: numberofseries,
+  series: {},
+  actors: {},
+  genres: [],
+  privets: false,
+};
 
-// for (let i = 0; i < 2; i++) {
-//   const a = prompt("oxirgi kp'rgan serialingiz?"),
-//     b = prompt("nechi baxo berasiz?");
+function rememberMyseries(){
+  for (let i = 0; i < 2; i++) {
+    const a = prompt("oxirgi kp'rgan serialingiz?"),
+      b = prompt("nechi baxo berasiz?");
+  
+      if(a != null && b != null && a != "" && b != ""){
+          seriesDB.series[a] = b;
+          console.log("done");
+      } else {
+          console.log("error");
+          i--;
+      }
+  }
+}
 
-//     if(a != null && b != null && a != "" && b != ""){
-//         seriesDB.series[a] = b;
-//         console.log("done");
-//     } else {
-//         console.log("error");
-//         i--;
-//     }
+rememberMyseries();
 
+function detectLevelseries(){
+  if(seriesDB.count < 5){
+    console.log("kam serial ko'ripsiz");
+} else if(seriesDB.count >= 5 && seriesDB.count <10){
+    console.log("siz klassik tomoshabin ekansiz");
+}else if(seriesDB.count >=10){
+    console.log("siz juda ko'p serial ko'rarkansiz");
+}else{
+    console.log('error');
+}
+}
+
+detectLevelseries();
+
+// function showDB(){
+//   if(!seriesDB.private){
+//     console.log(seriesDB);
+//   }
 // }
 
-// if(seriesDB.count < 5){
-//     console.log("kam serial ko'ripsiz");
-// } else if(seriesDB.count >= 5 && seriesDB.count <10){
-//     console.log("siz klassik tomoshabin ekansiz");
-// }else if(seriesDB.count >=10){
-//     console.log("siz juda ko'p serial ko'rarkansiz");
-// }else{
-//     console.log('error');
-// }
+function showDB(hidden){
+if(!hidden){
+  console.log(seriesDB);
+}
+}
+showDB();
 
 // console.log(seriesDB);
 
 // funksiya
-console.log("fozil");
-function sayHelloWorld() {
-  console.log("hello fozil");
-}
-sayHelloWorld();
+// console.log("fozil");
+// function sayHelloWorld() {
+//   console.log("hello fozil");
+// }
+// sayHelloWorld();
 
-function sum(a, b) {
-  console.log(a * b);
-}
-sum(5, 6);
-let name = "fozil";
-function Myname(name, surname) {
-  let age = 28;
-  console.log(`my name is ${name} ${surname}`);
-  console.log(age);
-  console.log(name);
-}
-Myname("Fozil", "Khudoyberdiev");
-// console.log(age);
-console.log(name);
+// function sum(a, b) {
+//   console.log(a * b);
+// }
+// sum(5, 6);
+// let name = "fozil";
+// function Myname(name, surname) {
+//   let age = 28;
+//   console.log(`my name is ${name} ${surname}`);
+//   console.log(age);
+//   console.log(name);
+// }
+// Myname("Fozil", "Khudoyberdiev");
+// // console.log(age);
+// console.log(name);
 
-function hello(a, b) {
-  sun = 15;
-  sun = 20;
-  console.log(sum);
-}
-let sun = 25;
-hello();
-console.log(sun);
+// function hello(a, b) {
+//   sun = 15;
+//   sun = 20;
+//   console.log(sum);
+// }
+// let sun = 25;
+// hello();
+// console.log(sun);
 
-function calc(a, b) {
-  return a + b;
-}
-console.log(calc(2, 3));
+// function calc(a, b) {
+//   return a + b;
+// }
+// console.log(calc(2, 3));
 
-console.log(a);
-var a = 2;
+// console.log(a);
+// var a = 2;
 
 // function declalation
 // Script kodimizni ishlashni boshlashdan oldin yaratilgan bo'ladi, va biz uni funcsiyadan oldin chaqirishimiz mumkin
@@ -278,35 +309,35 @@ var a = 2;
 
 //lesson-14
 
-const user = "Fozil";
-console.log(user.length);
+// const user = "Fozil";
+// console.log(user.length);
 
-const arr = [1, 2, 3, 4];
-console.log(arr.length);
-console.log(user[1]);
-console.log(user[1], "o");
-console.log(user);
+// const arr = [1, 2, 3, 4];
+// console.log(arr.length);
+// console.log(user[1]);
+// console.log(user[1], "o");
+// console.log(user);
 
-console.log(user.toUpperCase());
+// console.log(user.toUpperCase());
 
-const upperCaseUser = user.toUpperCase();
-console.log(upperCaseUser);
+// const upperCaseUser = user.toUpperCase();
+// console.log(upperCaseUser);
 
-console.log(user.toLowerCase());
+// console.log(user.toLowerCase());
 
-const greeting = "Hello  world";
-console.log(greeting.indexOf("w"));
-console.log(greeting.slice(4));
-console.log(greeting.slice(-6, 1));
-console.log(greeting.substring(5, 10)); // slecedan farqi - qiymat qabul qilmaydi
-console.log(greeting.substr(5, 5));
+// const greeting = "Hello  world";
+// console.log(greeting.indexOf("w"));
+// console.log(greeting.slice(4));
+// console.log(greeting.slice(-6, 1));
+// console.log(greeting.substring(5, 10)); // slecedan farqi - qiymat qabul qilmaydi
+// console.log(greeting.substr(5, 5));
 
-//number
+// //number
 
-const num2 = 8.8;
+// const num2 = 8.8;
 
-console.log(Math.round(num2));
+// console.log(Math.round(num2));
 
-const boderWidth = "13.8px"
-console.log(parseInt(boderWidth));
-console.log(parseFloat(boderWidth));
+// const boderWidth = "13.8px"
+// console.log(parseInt(boderWidth));
+// console.log(parseFloat(boderWidth));
