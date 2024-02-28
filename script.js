@@ -215,7 +215,7 @@ function rememberMyseries(){
   }
 }
 
-rememberMyseries();
+// rememberMyseries();
 
 function detectLevelseries(){
   if(seriesDB.count < 5){
@@ -242,8 +242,15 @@ if(!hidden){
   console.log(seriesDB);
 }
 }
-showDB();
+showDB(seriesDB.private);
 
+function writeGenres(){
+  for(let i = 0; i <= 2; i++){
+     const genre = prompt(`yaxshi ko'rgan janringiz ${i+1}`)
+     seriesDB.genres[i] = genre;
+  }
+}
+writeGenres()
 // console.log(seriesDB);
 
 // funksiya
@@ -341,3 +348,4 @@ showDB();
 // const boderWidth = "13.8px"
 // console.log(parseInt(boderWidth));
 // console.log(parseFloat(boderWidth));
+
