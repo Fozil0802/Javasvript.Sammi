@@ -349,3 +349,35 @@ writeGenres()
 // console.log(parseInt(boderWidth));
 // console.log(parseFloat(boderWidth));
 
+// calback
+
+//"use strict"
+
+function first(cb){
+  // code
+  setTimeout(() =>{
+    console.log(1);
+    cb();
+  },1000);
+}
+
+function second(){
+  // code
+  console.log(2)
+}
+
+first(second);
+
+function edu (subject, callback) {
+  console.log(`i wanna teach ${subject}`)
+  callback();
+}
+
+function done() {
+console.log("that's great")
+}
+edu("JavaScript", done)
+
+
+
+
